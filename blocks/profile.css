@@ -1,0 +1,254 @@
+.profile {
+    margin: 40px auto 50px;
+    display: grid;
+    grid-template-columns: 120px 1fr 150px;
+    max-width: 860px;
+    box-sizing: border-box;
+  }
+  
+  .profile__info {
+    padding: 0 0 0 30px;
+    max-width: 490px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 18px;
+  }
+  
+  .profile__name {
+    margin: 0;
+    font-size: 42px;
+    max-width: 85%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .profile__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  .profile__edit-button {
+    width: 24px;
+    height: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+  }
+  
+  .profile__edit-button:hover{
+    cursor: pointer;
+    background: #333;
+  }
+  .profile__description {
+    margin:0;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .profile__add-button {
+    width: 150px;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    font-size: 45px;
+    text-align: center;
+    justify-self: end; 
+    align-self: center;
+    cursor: pointer;
+  }
+
+  
+  .profile__add-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: #333;
+  }
+  
+
+.profile__modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 430px;
+  height: 330px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  color: black;
+  
+}
+
+.profile__modal-content-close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor:pointer;
+
+}
+.profile__modal-content h2 {
+  text-align: left;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 30px;
+  font-weight: bold;
+  
+
+}
+
+
+form label {
+  display: block;
+  font-size: 0.9rem;
+  text-align: left;
+  color: black;
+  margin-bottom: 5px;
+}
+
+form input {
+
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  background: none;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+form input:focus {
+  outline: none;
+  border-bottom: 1px solid #000000;
+
+}
+.profile__modal-save-button {
+  background: #000000;
+  color: white;
+  border: none;
+  padding:10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Inter";
+  width: 100%;
+  text-align: center;
+  width: 358px;
+  height: 50px;
+  margin-top: 30px;
+  
+
+  .profile__modal-save-button:hover {
+    background-color: #333;
+  }
+
+
+  @media screen and (max-width: 1100px) {
+    .profile__name {
+      max-width: 400px;
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .profile {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile__info {
+      padding: 30px 19px 36px;
+      justify-content: center;
+      justify-self: center;
+    }
+  
+    .profile__image {
+      justify-self: center;
+    }
+  
+    .profile__name {
+      max-width: 200px;
+      font-size: 22px;
+    }
+  
+    .profile__edit-button {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .profile__description {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 14px;
+    }
+  
+    .profile__add-button {
+      width: 282px;
+      justify-self: center;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+
+
+    .profile {
+      grid-template-columns: 1fr;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 0%;
+      background-color: red;
+
+    }
+    .profile__modal-content {
+      width: 90%;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .profile__modal-content h2 {
+      font-size: 1.2rem;
+    }
+
+    form input {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+   .profile__modal-save-button {
+
+    padding: 8px;
+    font-size: 0.9rem;
+   }
+   
+   .profile__add-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+
+   }
+
+   .profile__info {
+    text-align: center;
+   }
+   
+   .profile__image {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+   }
+ 
+   .profile__name {
+    font-size: 1rem;
+
+   }
+
+   .profile__description {
+
+    font-size: 0.8rem;
+   }
+
+
+  }
