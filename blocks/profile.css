@@ -203,7 +203,8 @@ form input:focus {
 
     }
     .profile__modal-content {
-      width: 90%;
+      width: 320px;
+      height: 568px;
       padding: 15px;
       border-radius: 10px;
     }
